@@ -43,11 +43,12 @@
             font-weight: 800;
             font-size: 12px;
             text-transform: uppercase;
-            padding: 8px 15px;
-            border: 1px solid #ffffff;
-            border-radius: 20px;
+            padding: 10px 20px;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
             transition: 0.3s;
-            opacity: 0.6;
+            opacity: 0.8;
+            background: transparent;
         }
 
         .back-home-link:hover {
@@ -72,8 +73,8 @@
             letter-spacing: 8px;
             text-transform: uppercase;
             text-align: center;
-            ground: linear-gradient(#fff, #555);
-            -webkit-ground-clip: text;
+            background: linear-gradient(#fff, #555);
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
             margin: 0;
@@ -92,19 +93,19 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            ground-color: #555; 
+            background-color: #555; 
             box-shadow: 0 0 5px rgba(255,255,255,0.2);
             transition: 0.3s;
         }
 
-        .status-online { ground-color: #00ff00; box-shadow: 0 0 12px #00ff00; }
-        .status-idle { ground-color: #ffaa00; box-shadow: 0 0 12px #ffaa00; }
-        .status-offline { ground-color: #ff0000; box-shadow: 0 0 12px #ff0000; }
+        .status-online { background-color: #00ff00 !important; box-shadow: 0 0 12px #00ff00; }
+        .status-idle { background-color: #ffaa00 !important; box-shadow: 0 0 12px #ffaa00; }
+        .status-offline { background-color: #ff0000 !important; box-shadow: 0 0 12px #ff0000; }
         .status-text { font-size: 10px; color: #888; letter-spacing: 2px; text-transform: uppercase; }
 
         /* Proxy Boxes */
         .scramjet-box {
-            ground: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.1);
             border: 2px solid #fff;
             padding: 30px 60px;
             border-radius: 20px;
@@ -114,7 +115,7 @@
         }
 
         .scramjet-box:hover {
-            ground: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             transform: scale(1.05);
         }
 
@@ -136,12 +137,12 @@
             text-align: center;
             padding: 25px;
             border-radius: 20px;
-            ground: rgba(40, 40, 40, 0.01);
+            background: rgba(255, 255, 255, 0.03);
             border: 1px solid #333;
         }
 
-        .btn { padding: 12px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: 0.3s; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.2); ground: #222; color: #fff; }
-        .btn:hover { ground: #444; border-color: #fff; }
+        .btn { padding: 12px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: 0.3s; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.2); background: #222; color: #fff; }
+        .btn:hover { background: #444; border-color: #fff; }
 
     </style>
 </head>
@@ -149,7 +150,7 @@
 
     <div class="master-wrapper">
         <div class="header-nav">
-            <a href="https://realhome-74e.pages.dev" class="-home-link">← Home</a>
+            <a href="https://realhome-74e.pages.dev" class="back-home-link">← Home</a>
         </div>
 
         <div class="header-container">
